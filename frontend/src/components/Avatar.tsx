@@ -8,13 +8,3 @@ export default function Avatar({ n }:any) {
 }
 
 
-
-<button
-onClick={() => {
-  router("/login");
-}}
-type="button"
-className="text-white bg-gradient-to-r from-green-500 to-blue-500 hover:bg-gradient-to-l hover:from-green-500 hover:to-blue-500 focus:ring-4 focus:outline-none focus:ring-green-200 font-medium rounded-lg text-sm px-6 py-1 text-center"
->
-
-</button>
