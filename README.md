@@ -114,7 +114,7 @@ VentureVerse/
 
 ## Usage
 
-Once both the backend and frontend servers are running, you can access the application in your browser at `http://localhost:3000`.
+Once both the backend and frontend servers are running, you can access the backend at `http://localhost:3000`  and the frontend at `http://localhost:5173`(depends on the available free ports on your device) .
 
 ## Contributing
 
