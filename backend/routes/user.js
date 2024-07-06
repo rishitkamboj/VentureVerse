@@ -129,6 +129,27 @@ const signinBody = zod.object({
 });
 
 
+router.get('/info/:id', async (req, res) => {
+    try {
+        const user = await User.findOne({
+           _id: req.params.id
+        });
+
+        if (!user) {
+            return res.status(404).json({ error: "User not found" });
+        }
+
+        res.json({
+            firstname: user.firstname,
+            userid:req.userId 
+        });
+    } catch (error) {
+        console.error("Error in /userinfo route:", error); 
+        res.status(500).json({ error: "Server Error" });
+    }
+});
+
+
 
 
 
