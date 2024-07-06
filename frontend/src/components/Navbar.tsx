@@ -13,7 +13,7 @@ export default function NavBar({n}:any){
   return (
     <nav className=" border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="/home" className="flex items-center space-x-3 rtl:space-x-reverse">
          
           <div className="text-lg font-bold text-gray-900 dark:text-white">
             <span className="text-indigo-400">Venture</span>
@@ -67,7 +67,7 @@ export default function NavBar({n}:any){
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
             <li>
               <a
-                href="/"
+                href="/home"
                 className=" text-white  block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
                 aria-current="page"
               >
@@ -92,7 +92,7 @@ export default function NavBar({n}:any){
             </li>
             <li>
               <a
-                href="#"
+                href="/job"
                 className=" text-white  block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                Jobs
