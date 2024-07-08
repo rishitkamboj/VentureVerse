@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ModalComponent from "./ModalComponent";
 
 
 interface JobProp{
@@ -25,9 +26,12 @@ export default function JobCom() {
 
   return (
     <div>
-      <div>
-        <div className="flex justify-center text-white text-2xl font-bold">Publish a job</div>
-  
+      <div className="">
+        <div className="flex justify-center text-white text-2xl font-bold items-center gap-4">
+         <div>Publish a job </div> 
+           <ModalComponent/>
+         </div>
+ 
       </div>
       <div className="mt-4 flex justify-center text-white text-xl font-bold">Jobs Posted:-</div>
 
