@@ -28,6 +28,27 @@ router.get("/", async (req, res) => {
     }
 });
 
+router.get("/getid/:id",authMiddleware,async (req,res)=>{
+           try{
+            const job=await Job.findById({
+                _id:req.params.id
+            });
+            if(!job){
+                return res.status(400).json({
+                    msg:"Not found"
+                })
+            }
+            return res.json({
+                job
+            });
+           }
+           catch(error){
+            res.status(500).json({
+                message: "Internal server error"
+            });
+           }
+})
+
 router.post("/postjob",authMiddleware, async (req, res) => {
     try {
         const job = await Job.create({

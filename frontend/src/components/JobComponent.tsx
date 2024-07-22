@@ -4,6 +4,7 @@ import ModalComponent from "./ModalComponent";
 
 
 interface JobProp{
+        id:Number,
      title:string,
         description:string,
         location:string,
@@ -12,7 +13,8 @@ interface JobProp{
 }
 
 export default function JobCom() {
-  const [job, setJob] = useState<string[]>([]);
+  const [job, setJob] = useState<JobProp[]>([]);
+//  job.push("Software Developer");
   const router= useNavigate();
 
   // useEffect(() => {
@@ -40,7 +42,7 @@ export default function JobCom() {
           <li key={index} onClick={()=>{
                   router("/job/"+j);
           }}className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-            {j}  
+            {}  
           </li>
         ))}
       </ul>

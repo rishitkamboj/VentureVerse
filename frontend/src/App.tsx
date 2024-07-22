@@ -14,7 +14,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<Home />} />
         <Route path="/job" element={<Job />} />
-        <Route path="/job/:id" element={<Job />} /> {/* Dynamic Path */}
+        <Route path="/job/:id" element={<Job />} /> 
       </Routes>
     </BrowserRouter>
   );
