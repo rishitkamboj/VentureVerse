@@ -4,6 +4,7 @@ import Signup from './pages/Signup';
 import HeroPage from './pages/Heropage';
 import Home from './pages/Home';
 import Job from './pages/Job';
+import JobIndividual from './pages/jobIndividual';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<Home />} />
         <Route path="/job" element={<Job />} />
-        <Route path="/job/:id" element={<Job />} /> 
+        <Route path="/job/:id" element={<JobIndividual/>} /> 
       </Routes>
     </BrowserRouter>
   );

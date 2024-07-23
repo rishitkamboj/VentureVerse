@@ -1,33 +1,19 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
+import NavBar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Individual from "../components/Individual";
+
 
 export default function JobIndividual() {
-   const { id } = useParams();
-   const [job, setJob] = useState(null);
+  
+return (
+   <div>
+   <NavBar n="Rishit" />
+   <div className="h-screen">
+        <Individual/>
+   </div>
+   <Footer /></div>
+)
 
-   useEffect(() => {
-      const fetchJob = async () => {
-         try {
-            const response = await axios.get(`http://localhost:5000/api/getid/${id}`);
-            setJob(response.data);
-         } catch (error) {
-            console.error("Error fetching job data:", error);
-         }
-      };
 
-      fetchJob();
-   }, [id]);
-
-   return (
-      <div>
-         {job ? (
-            <div>
-             
-            </div>
-         ) : (
-            <p>Loading...</p>
-         )}
-      </div>
-   );
 }

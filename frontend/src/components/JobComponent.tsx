@@ -15,7 +15,10 @@ interface JobProp{
 export default function JobCom() {
   const [job, setJob] = useState<JobProp[]>([]);
 //  job.push("Software Developer");
+
+job.push({id:1,title:"Software Developer",description:"We are looking for a software developer",location:"Bangalore",userId:1,contact:1234567890});
   const router= useNavigate();
+
 
   // useEffect(() => {
    
@@ -38,14 +41,23 @@ export default function JobCom() {
       <div className="mt-4 flex justify-center text-white text-xl font-bold">Jobs Posted:-</div>
 
       <ul className="m-4 text-sm font-medium border border-gray-200 rounded-lg bg-gray-700 border-gray-600 text-white">
-        {job.map((j, index) => (
-          <li key={index} onClick={()=>{
-                  router("/job/"+j);
-          }}className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-            {}  
-          </li>
-        ))}
-      </ul>
+  {job.map((j, index) => (
+    <li
+      key={index}
+      onClick={() => {
+        console.log(j.id);
+        router(`/job/${j.id}`);
+      }}
+      className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div className="text-xl font-bold">{j.title}</div>
+      <div>{j.description}</div>
+      <div>{j.location}</div>
+      <div>{String(j.contact)}</div>
+    </li>
+  ))}
+</ul>
+
     </div>
   );
 }
