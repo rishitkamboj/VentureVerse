@@ -76,7 +76,7 @@ export default function NavBar({n}:any){
             </li>
             <li>
               <a
-                href="/about"
+                href="/messages"
                 className=" text-white  block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                 Messages
@@ -84,7 +84,7 @@ export default function NavBar({n}:any){
             </li>
             <li>
               <a
-                href="/about"
+                href="/community"
                 className=" text-white  block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
               >
                Community

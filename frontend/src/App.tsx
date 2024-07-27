@@ -5,6 +5,8 @@ import HeroPage from './pages/Heropage';
 import Home from './pages/Home';
 import Job from './pages/Job';
 import JobIndividual from './pages/jobIndividual';
+import Community from './pages/Community';
+import Messages from './pages/Messages';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/job" element={<Job />} />
         <Route path="/job/:id" element={<JobIndividual/>} /> 
+        <Route path="/community" element={<Community/>} />
+        <Route path="/messages" element={<Messages/>}/>
       </Routes>
     </BrowserRouter>
   );
