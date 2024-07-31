@@ -20,6 +20,7 @@ function App() {
         <Route path="/job/:id" element={<JobIndividual/>} /> 
         <Route path="/community" element={<Community/>} />
         <Route path="/messages" element={<Messages/>}/>
+        <Route path="/user/:id" element={<Messages/>}/>
       </Routes>
     </BrowserRouter>
   );
