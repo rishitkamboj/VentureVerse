@@ -2,6 +2,7 @@ import  { useEffect } from 'react';
 import Footer from "../components/Footer";
 import NavBar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import ProfileCard from '../components/IndividualCard';
 
 export default function Home() {
    
@@ -25,6 +26,13 @@ export default function Home() {
              <NavBar n="Rishit" />
              <div className="min-h-screen"></div>
              <Footer />
+             <div className="App">
+            <ProfileCard 
+                name="Bonnie Green" 
+                role="Visual Designer" 
+                imageUrl="/docs/images/people/profile-picture-3.jpg" 
+            />
+        </div>
          </div>
      );
 }
