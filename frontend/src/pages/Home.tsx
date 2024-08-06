@@ -26,13 +26,6 @@ export default function Home() {
              <NavBar n="Rishit" />
              <div className="min-h-screen"></div>
              <Footer />
-             <div className="App">
-            <ProfileCard 
-                name="Bonnie Green" 
-                role="Visual Designer" 
-                imageUrl="/docs/images/people/profile-picture-3.jpg" 
-            />
-        </div>
          </div>
      );
 }

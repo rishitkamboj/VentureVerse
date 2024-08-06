@@ -7,6 +7,8 @@ import Job from './pages/Job';
 import JobIndividual from './pages/jobIndividual';
 import Community from './pages/Community';
 import Messages from './pages/Messages';
+import Individual from './components/Individual';
+import UserIndividual from './pages/IndividualUser';
 
 function App() {
   return (
@@ -18,9 +20,10 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/job" element={<Job />} />
         <Route path="/job/:id" element={<JobIndividual/>} /> 
+        <Route path="/community/user/:id" element={<UserIndividual/>}/>
         <Route path="/community" element={<Community/>} />
         <Route path="/messages" element={<Messages/>}/>
-        <Route path="/user/:id" element={<Messages/>}/>
+   
       </Routes>
     </BrowserRouter>
   );
