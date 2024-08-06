@@ -3,7 +3,7 @@ import Avatar3 from './Avatar3';
 
 const ProfileCard = ({ name, role }:any) => {
     return (
-        <div className="w-full max-w-sm  border  rounded-lg shadow bg-gray-800border-gray-700">
+        <div className="w-full max-w-sm  border  rounded-lg shadow bg-gray-800 border-gray-700">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
                 <div className="w-24 h-24 mb-3 rounded-full shadow-lg flex items-center justify-center overflow-hidden">
